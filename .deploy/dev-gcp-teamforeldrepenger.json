@@ -1,0 +1,15 @@
+{
+  "ingresses": [
+    "https://swagger-foreldrepenger-inntektsmelding-api.ekstern.dev.nav.no"
+  ],
+  "minReplicas": "1",
+  "maxReplicas": "1",
+  "env": "development",
+  "customCss": "",
+  "proxyRedirects": [
+    {
+      "path": "/v1",
+      "url": "http://foreldrepenger-inntektsmelding-api"
+    }
+  ]
+}
